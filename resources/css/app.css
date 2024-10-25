@@ -1,0 +1,28 @@
+body {
+    background-color: #121212; /* Soft dark background */
+    color: #1e1d1d;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-warning {
+    color: #000; /* Dark text on warning buttons */
+}
+
+h1, h5 {
+    font-weight: bold;
+}
+
+.note {
+    display: block;
+    margin: 10px auto;
+    width: 100%; /* Full width */
+    max-width: 600px; /* Adjust to preferred size */
+}
