@@ -5,7 +5,7 @@
     <div class="card note-card shadow-sm rounded-lg">
         <div class="card-body">
             <h5 class="card-title">{{ Str::limit($note->title, 255, '...') ?: 'Untitled Note' }}</h5>
-            <p class="card-text">{{ Str::limit($note->content, 500, '...') }}</p>
+            <p class="card-text">{{ ($note->content ?? '' ) }}</p>
             <small class="text-muted">
                 Created: {{ $note->created_at->format('M d, Y H:i') }}
                 @if ($note->updated_at != $note->created_at)
